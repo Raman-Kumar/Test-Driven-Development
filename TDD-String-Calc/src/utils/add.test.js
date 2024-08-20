@@ -15,5 +15,9 @@ describe('testing add function', ()=> {
         expect(add("1,2")).toBe(3)
     })
 
+    test(' add("1\n2,3") should be 6 ', ()=> {
+        expect(add("1\n2\n3")).toBe(6)
+    })
+
 
 })
