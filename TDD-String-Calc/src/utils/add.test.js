@@ -20,4 +20,7 @@ describe('testing add function', ()=> {
     })
 
 
+    test(' add("//;\n1;2") should be 3 ', ()=> {
+        expect(add("//;\n1;2")).toBe(3)
+    })
 })
