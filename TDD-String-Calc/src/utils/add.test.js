@@ -23,4 +23,9 @@ describe('testing add function', ()=> {
     test(' add("//;\n1;2") should be 3 ', ()=> {
         expect(add("//;\n1;2")).toBe(3)
     })
+
+    it("should throw an exception for a single negative number", () => {
+        expect(() => add("1,-2,3")).toThrow("negative numbers not allowed: -2");
+    });
+
 })

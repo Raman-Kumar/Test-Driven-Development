@@ -10,6 +10,14 @@ export const add = (string) => {
     stringArry = stringArry.split(delimiter).map(item => item.split(','))
     let numbersArray = stringArry.flat()
 
+    let nagativeNums = []
+    numbersArray.map(num => {
+        if(num < 0)
+        nagativeNums.push(num)
+    });
+    if(nagativeNums.length)
+        throw new Error(`negative numbers not allowed: ${nagativeNums.join(',')}`)
+
     const result = numbersArray.reduce((acc, num) => {
         acc = acc + parseInt(num)
         return acc
