@@ -4,8 +4,10 @@ export const add = (string) => {
     let delimiter = '\n'
     let stringArry = string
     if(string.substring(0,2) == '//'){
-        delimiter = string.substring(2,3)
-        stringArry = stringArry.split('\n')[1]
+        delimiter = stringArry.substring(2,3)
+        stringArry = string.substring(4)
+        if(stringArry.charAt(0) == 'n')
+            stringArry = string.substring(5)
     }
     stringArry = stringArry.split(delimiter).map(item => item.split(','))
     let numbersArray = stringArry.flat()
