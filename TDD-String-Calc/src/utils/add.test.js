@@ -3,7 +3,7 @@ import { add } from './add'
 describe('testing add function', ()=> {
 
     test(' add("") should be 0 ', ()=> {
-        expect(add("1,2")).toBe(0)
+        expect(add("")).toBe(0)
 
     })
 
