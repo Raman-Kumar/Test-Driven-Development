@@ -1,10 +1,13 @@
-#String Calculator TDD Kata Summary
-##Objective: 
+# String Calculator TDD Kata Summary
+## Objective: 
 Create a simple string calculator.
 
-Input/Output test cases:
+### Input/Output test cases:
+
 "" → 0
+
 "1" → 1
+
 "1,5" → 6
 
 "//;\n1;2" → 3
